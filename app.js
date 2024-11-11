@@ -23,8 +23,17 @@ let nbMode=0;
 
 
 const darkMode=()=>{
+  document.getElementById("planImage").src="images/writeBlack.png";
+  document.getElementById("tipsImage").src="images/bulbBlack.png";
+  document.getElementById("newsImage").src="images/compassBlack.png";
+  document.getElementById("codeImage").src="images/codeBlack.png";
+  tips.style.backgroundColor="#cdd2d8";
+  plan.style.backgroundColor="#cdd2d8";
+  news.style.backgroundColor="#cdd2d8";
+  code.style.backgroundColor="#cdd2d8";
   document.body.style.backgroundColor="white";
   inputAndSend.style.backgroundColor="#cdd2d8";
+  mode.style.backgroundColor="#cdd2d8"
   mode.style.backgroundColor="#cdd2d8"
   deleteAll.style.backgroundColor="#cdd2d8";
   document.body.style.color="black";
@@ -34,6 +43,14 @@ const darkMode=()=>{
   nbMode++;
 }
 const lightMode=()=>{
+  document.getElementById("planImage").src="images/writeWhite.png";
+  document.getElementById("tipsImage").src="images/bulbWhite.png";
+  document.getElementById("newsImage").src="images/compassWhite.png";
+  document.getElementById("codeImage").src="images/codeWhite.png";
+  tips.style.backgroundColor="#323232";
+  plan.style.backgroundColor="#323232";
+  news.style.backgroundColor="#323232";
+  code.style.backgroundColor="#323232";
   document.body.style.backgroundColor="#242424";
   document.body.style.color="white";
   inputAndSend.style.backgroundColor="#323232";
@@ -100,3 +117,70 @@ const generateAPIResponse=async(messageUser)=>{
   tips.addEventListener("click",()=>{deleteTitles();generateAPIResponse("What are the best tips to improve my public speaking skills?")});
   news.addEventListener("click",()=>{deleteTitles();generateAPIResponse("Can you help me find the latest news on web development?")});
   code.addEventListener("click",()=>{deleteTitles();generateAPIResponse("Write JavaScript code to sum all elements in an array.")});
+
+
+  plan.addEventListener("mouseover",()=>{
+    if(nbMode%2!=0){
+      plan.style.transition="1s ease";
+      plan.style.backgroundColor="#434343";
+    }else{
+      plan.style.transition="1s ease";
+      plan.style.backgroundColor="#cdd2d8b5";
+    }
+  });
+  plan.addEventListener("mouseout",()=>{
+    if(nbMode%2!=0){
+      plan.style.backgroundColor="#323232";
+    }else{
+      plan.style.backgroundColor="#cdd2d8";
+    }
+  });
+  tips.addEventListener("mouseover",()=>{
+    if(nbMode%2!=0){
+      tips.style.transition="1s ease";
+      tips.style.backgroundColor="#434343";
+    }else{
+      tips.style.transition="1s ease";
+      tips.style.backgroundColor="#cdd2d8b5";
+    }
+  });
+  tips.addEventListener("mouseout",()=>{
+    if(nbMode%2!=0){
+      tips.style.backgroundColor="#323232";
+    }else{
+      tips.style.backgroundColor="#cdd2d8";
+    }
+  });
+  news.addEventListener("mouseover",()=>{
+    if(nbMode%2!=0){
+      news.style.transition="1s ease";
+      news.style.backgroundColor="#434343";
+    }else{
+      news.style.transition="1s ease";
+      news.style.backgroundColor="#cdd2d8b5";
+    }
+  });
+  news.addEventListener("mouseout",()=>{
+    if(nbMode%2!=0){
+      
+      news.style.backgroundColor="#323232";
+    }else{
+      news.style.backgroundColor="#cdd2d8";
+    }
+  });
+  code.addEventListener("mouseover",()=>{
+    if(nbMode%2!=0){
+      code.style.transition="1s ease";
+      code.style.backgroundColor="#434343";
+    }else{
+      code.style.transition="1s ease";
+      code.style.backgroundColor="#cdd2d8b5";
+    }
+  });
+  code.addEventListener("mouseout",()=>{
+    if(nbMode%2!=0){
+      code.style.backgroundColor="#323232";
+    }else{
+      code.style.backgroundColor="#cdd2d8";
+    }
+  });
