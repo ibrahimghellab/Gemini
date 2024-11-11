@@ -1,0 +1,58 @@
+*{
+
+}
+.propositions{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#mode{
+    background-image: url("images/darkmode.png"); 
+    background-repeat: no-repeat ;
+    background-size: contain;
+
+}
+
+#delete{
+    background-image: url("images/deleteBlack.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#send{
+    background-image: url("images/sendBlack.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sendOptions{
+    display: flex;
+}
+
+#inputAndSend{
+    background-color: #cdd2d8;
+    border-radius: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+input{
+    background: transparent;
+    border: 0px;
+    flex: 99;
+}
+#send{
+    border: 0px;
+    background-color: transparent;
+    flex: 1;
+    
+
+}
+
+#delete,#mode{
+    border: 0px;
+    background-color: #cdd2d8;
+    border-radius: 100px;
+}
