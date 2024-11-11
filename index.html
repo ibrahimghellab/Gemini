@@ -2,38 +2,45 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello,there</h1>
-    <h2>How can I help you today?</h2>
-    <div>
-        <div>
-            <p>Help me a plan game night with my 5 best friends to under $100.</p>
-            <img src="" alt="">
-        </div>
-        <div>
-            <p>What are the best tips to improve my public speaking skills?</p>
-            <img src="" alt="">
-        </div>
-        <div>
-            <p>Can you help me find the latest news on web development?</p>
-            <img src="" alt="">
-        </div>
-        <div>
-            <p>Wtrite JavaScript code to sum all elements in an array.</p>
-            <img src="" alt="">
+    <div id="header">
+        <h1>Hello,there</h1>
+        <h2>How can I help you today?</h2>
+        <div class="propositions">
+            <div id="plan">
+                <p>Help me a plan game night with my 5 best friends to under $100.</p>
+                <img src="" alt="">
+            </div>
+            <div id="tips">
+                <p>What are the best tips to improve my public speaking skills?</p>
+                <img src="" alt="">
+            </div>
+            <div id="news">
+                <p>Can you help me find the latest news on web development?</p>
+                <img src="" alt="">
+            </div>
+            <div id="code">
+                <p>Write JavaScript code to sum all elements in an array.</p>
+                <img src="" alt="">
+            </div>
         </div>
     </div>
+    
 
     <p id="response"></p>
 
-    <div>
-        <input type="user" id="userInput" placeholder="Enter a prompt here">
-        <button id="a" style='background-image: url("images/3313896.png"); background-repeat: no-repeat ;background-size: contain;'></button>
-        <button style='background-image: url("images/561125.png"); background-repeat: no-repeat ;background-size: contain;'></button>
+    <div class="sendOptions">
+        <div id="inputAndSend">
+            <input type="user" id="userInput" placeholder="Enter a prompt here">
+            <button id="send"></button>
+        </div>
+        <button id="mode"></button>
+        <button id="delete"></button>
 
     </div>
 
@@ -41,6 +48,6 @@
     <p>Check Gemini's answers, as he may be wrong, including about people.<a href="https://support.google.com/gemini/answer/13594961?visit_id=638667100623272549-3822842384&p=privacy_notice&rd=1#privacy_notice">Your Privacy and Gemini</a></p>
 
 
-    <script type="module" src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
