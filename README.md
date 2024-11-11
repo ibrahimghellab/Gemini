@@ -48,7 +48,3 @@ This project implements a simple chatbot interface powered by **Google's Gemini 
 ## License 📄
 
 This project is open-source and available under the MIT License. Feel free to fork, modify, and contribute! 🎉
-
----
-
-**Happy Chatting!** 🤖💬  
