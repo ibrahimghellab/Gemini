@@ -1,5 +1,7 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+*{
+    font-family: "Poppins",sans-serif;
 }
 .propositions{
     display: flex;
@@ -28,6 +30,9 @@
 
 .sendOptions{
     display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    
 }
 
 #inputAndSend{
@@ -37,11 +42,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex: 99;
 }
 input{
     background: transparent;
     border: 0px;
     flex: 99;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1em;
 }
 #send{
     border: 0px;
@@ -55,4 +66,153 @@ input{
     border: 0px;
     background-color: #cdd2d8;
     border-radius: 100px;
+    flex: 1;
 }
+
+#title{
+font-size: 2.5em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #5e9bff, #ec6f93);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+#plan,#news,#tips,#code{
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background-color: #cdd2d8;
+}
+
+/*
+body {
+    background-color: #ffff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#title {
+    
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #a0a0a0;
+    margin-top: -10px;
+    font-weight: normal;
+}
+
+.propositions {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.propositions div {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 220px;
+    text-align: left;
+    position: relative;
+    color: #e0e0e0;
+}
+
+.propositions div p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+#plan::after {
+    content: '🎲';
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #a0a0a0;
+}
+
+#tips::after {
+    content: '💡';
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #a0a0a0;
+}
+
+#news::after {
+    content: '🌐';
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #a0a0a0;
+}
+
+#code::after {
+    content: '</>';
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #a0a0a0;
+}
+
+.sendOptions {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+#userInput {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #3a3a3a;
+}
+
+p#response {
+    color: #a0a0a0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+p a {
+    color: #6293ff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+*/
