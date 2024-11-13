@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
+
+
+
+
 *{
     font-family: "Poppins",sans-serif;
 }
@@ -86,23 +91,7 @@ font-size: 2.5em;
 
 
 .darkMode{
-    document.getElementById("planImage").src="images/writeWhite.png";
-  document.getElementById("tipsImage").src="images/bulbWhite.png";
-  document.getElementById("newsImage").src="images/compassWhite.png";
-  document.getElementById("codeImage").src="images/codeWhite.png";
-  tips.style.backgroundColor="#323232";
-  plan.style.backgroundColor="#323232";
-  news.style.backgroundColor="#323232";
-  code.style.backgroundColor="#323232";
-  document.body.style.backgroundColor="#242424";
-  document.body.style.color="white";
-  inputAndSend.style.backgroundColor="#323232";
-  mode.style.backgroundColor="#323232"
-  deleteAll.style.backgroundColor="#323232";
-  send.style.backgroundImage=`url("images/sendWhite.png")`
-  mode.style.backgroundImage=`url("images/lightmode.png")`;
-  deleteAll.style.backgroundImage=`url("images/deleteWhite.png")`;
-  nbMode++;
+   
 }
 
 
