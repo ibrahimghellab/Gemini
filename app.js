@@ -23,7 +23,8 @@ let nbMode=0;
 
 
 const darkMode=()=>{
-  document.getElementById("planImage").src="images/writeBlack.png";
+  if(document.getElementById("planImage")){
+    document.getElementById("planImage").src="images/writeBlack.png";
   document.getElementById("tipsImage").src="images/bulbBlack.png";
   document.getElementById("newsImage").src="images/compassBlack.png";
   document.getElementById("codeImage").src="images/codeBlack.png";
@@ -31,6 +32,8 @@ const darkMode=()=>{
   plan.style.backgroundColor="#cdd2d8";
   news.style.backgroundColor="#cdd2d8";
   code.style.backgroundColor="#cdd2d8";
+  }
+  document.getElementById("planImage")
   document.body.style.backgroundColor="white";
   inputAndSend.style.backgroundColor="#cdd2d8";
   mode.style.backgroundColor="#cdd2d8"
@@ -43,14 +46,17 @@ const darkMode=()=>{
   nbMode++;
 }
 const lightMode=()=>{
-  document.getElementById("planImage").src="images/writeWhite.png";
-  document.getElementById("tipsImage").src="images/bulbWhite.png";
-  document.getElementById("newsImage").src="images/compassWhite.png";
-  document.getElementById("codeImage").src="images/codeWhite.png";
-  tips.style.backgroundColor="#323232";
-  plan.style.backgroundColor="#323232";
-  news.style.backgroundColor="#323232";
-  code.style.backgroundColor="#323232";
+  if(document.getElementById("planImage")){
+    document.getElementById("planImage").src="images/writeWhite.png";
+    document.getElementById("tipsImage").src="images/bulbWhite.png";
+    document.getElementById("newsImage").src="images/compassWhite.png";
+    document.getElementById("codeImage").src="images/codeWhite.png";
+    tips.style.backgroundColor="#323232";
+    plan.style.backgroundColor="#323232";
+    news.style.backgroundColor="#323232";
+    code.style.backgroundColor="#323232";
+  }
+
   document.body.style.backgroundColor="#242424";
   document.body.style.color="white";
   inputAndSend.style.backgroundColor="#323232";
